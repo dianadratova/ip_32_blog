@@ -7,4 +7,5 @@ class User (models.Model):
     last_name = models.CharField(max_length=200)
     age=models.PositiveIntegerField()
     balance = models.FloatField()
+    balance = models.FloatField(default=0.0)
 # Create your models here.
