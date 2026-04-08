@@ -10,15 +10,17 @@
             <th> Фамилия </th>
             <th> Возвраст </th>
             <th> Баланс</th>
+            <th>Роль </th>
         </tr>
         {% for user in users %}
             <tr>
-                <td> {{user.id }}</td>
-                <td> {{user.login }}</td>
-                <td> {{user.first_name}}</td>
-                <td> {{user.last_name}}</td>
-                <td> {{user.age}}</td>
-                <td> {{user.balance}}</td>
+                <td> {{ user.id }}</td>
+                <td> {{ user.login }}</td>
+                <td> {{ user.first_name }}</td>
+                <td> {{ user.last_name }}</td>
+                <td> {{ user.age }}</td>
+                <td> {{ user.balance }}</td>
+                <td> {{ user.role }}</td>
             </tr>
         {% endfor %}
     </table>
