@@ -10,8 +10,14 @@
 <body>
     <div id="wrapper">
         <div id="menu">
-            <a href="/user.html">Пользователи</a>
-            <a href="/add_role"> Роль </a>
+            <a href="/users">Пользователи</a>
+            <!-- <a href="/add_role"> Роль </a> -->
+            <a href="/login"> Войти </a>
+            <a href="/">Главная страница</a>
+            <a href="/add_user">Регистрация</a>
+            {% if user %}
+                <a href="/login_view">Выход</a>
+            {% endif %}
         </div>
 	    <div id="container">
 		    <div id="content">
